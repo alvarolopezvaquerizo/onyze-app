@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { PassengerInfoComponent } from './components/passenger-info/passenger-info.component';
+import { HeadboardPassengerInfoComponent } from './components/headboard-passenger-info/headboard-passenger-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PassengerInfoComponent
+    PassengerInfoComponent,
+    HeadboardPassengerInfoComponent
   ],
   imports: [
     BrowserModule
