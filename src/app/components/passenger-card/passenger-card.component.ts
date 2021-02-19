@@ -10,7 +10,7 @@ export class PassengerCardComponent implements OnInit {
   show: boolean;
 
   constructor() {
-    this.show = true;
+    this.show = false;
   }
 
   ngOnInit(): void {

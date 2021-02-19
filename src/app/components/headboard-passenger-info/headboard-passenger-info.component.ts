@@ -12,7 +12,7 @@ export class HeadboardPassengerInfoComponent implements OnInit {
   status: boolean;
 
   constructor() {
-    this.status = true;
+    this.status = false;
   }
 
   ngOnInit(): void {
