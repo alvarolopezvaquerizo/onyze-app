@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-headboard-passenger-info',
@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeadboardPassengerInfoComponent implements OnInit {
 
-  constructor() { }
+  @Output() viewChanged = new EventEmitter<boolean>(false);
+
+  status: boolean;
+
+  constructor() {
+    this.status = true;
+  }
 
   ngOnInit(): void {
+  }
+
+  hidden():void {
+    this.status = !this.status;
+    this.viewChanged.emit(this.status);
   }
 
 }
