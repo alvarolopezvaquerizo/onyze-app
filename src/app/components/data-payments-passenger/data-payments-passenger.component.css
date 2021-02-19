@@ -1,0 +1,62 @@
+.wrap {
+    width: 95%;
+    margin: 60px auto;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+.name {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}strong {
+    color: #2e384d;
+}p {
+    color: #cccccc;
+}
+
+.data {
+    margin-left: 20px;
+}
+
+img {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+#tittle {
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #cccccc;
+}
+
+#value {
+    color: #2e384d;
+}
+
+.information-passenger {
+    margin-top: 25px;
+    width: 20%;
+    float: left;
+}
+
+.information-passenger p {
+    margin-top: 25px;
+}
+
+.payment {
+    margin-top: 44px;
+    margin-left: 35%;
+}i {
+    margin-right: 5%;
+    color: #2e384d;
+    font-size: 170px;
+    transition: all 300ms;
+}i:hover {
+    cursor: pointer;
+    color: #2e5bff;
+}

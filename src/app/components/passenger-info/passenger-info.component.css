@@ -9,7 +9,7 @@
 }
 
 .info {
-    margin-top: 30px;
+    margin-top: 80px;
 }strong{
     color: #2e384d;
 }p{
@@ -19,6 +19,12 @@
 .from {
     float: left;
     padding: 10px 10px 0px 235px;
+}
+
+.separator {
+    border: 1px solid #cccccc;
+    width: 39%;
+    margin-left: 27%;
 }
 
 .to {
@@ -49,14 +55,10 @@
     margin-bottom: 15px;
 }
 
-#separator {
-    margin-top: 65px;
-    width: 40%;
-}
-
-#separator-details {
+.separator-details {
     margin-top: 4%;
     margin-bottom: 4%;
+    border: 1px solid #cccccc;
 }
 
 .info-details {
