@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PassengersService, Passenger } from '../../services/passengers.services';
 
 @Component({
   selector: 'app-passenger-info',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PassengerInfoComponent implements OnInit {
 
-  constructor() { }
+  passengers: Passenger[] = [];
+
+  constructor( private _passengersService: PassengersService ) {
+
+  }
 
   ngOnInit(): void {
+    this.passengers = this._passengersService.getPassengers();
+    console.log(this.passengers);
   }
 
 }
