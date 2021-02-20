@@ -1,3 +1,3 @@
-<div class="cards">
-    <app-passenger-card></app-passenger-card>
+<div class="cards" *ngFor="let passenger of passengers">
+    <app-passenger-card [passenger] = "passenger"></app-passenger-card>
 </div>

@@ -8,6 +8,10 @@
     clear: both;
 }
 
+.blue {
+    color: blue;
+}
+
 .information-passenger {
     margin-top: 6px;
     width: 20%;

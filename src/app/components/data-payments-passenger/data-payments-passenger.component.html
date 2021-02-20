@@ -5,32 +5,32 @@
     <div class="information-passenger">
         <div class="email">
             <p id="tittle">EMAIL</p>
-            <p id="value">invision@invisionapp.com</p>
+            <p id="value">{{ passenger.email }}</p>
         </div>
         
         <div class="phone">
             <p id="tittle">PHONE</p>
-            <p id="value">+144-3412-4422</p>
+            <p id="value">{{ passenger.phone }}</p>
         </div>
         
         <div class="location">
             <p id="tittle">LOCATION</p>
-            <p id="value">New York, NY</p>
+            <p id="value">{{ passenger.location }}</p>
         </div>
     </div>
 
     <div class="payment">
-        <i class="fab fa-cc-paypal"></i>
-        <i class="fab fa-cc-visa"></i>
-        <i class="fab fa-cc-mastercard"></i>
-        <i class="fab fa-cc-apple-pay"></i>
+        <i class="fab fa-cc-paypal" [ngClass]="{'blue': passenger.payment === 'Paypal'}"></i>
+        <i class="fab fa-cc-visa" [ngClass]="{'blue': passenger.payment === 'Visa'}"></i>
+        <i class="fab fa-cc-mastercard" [ngClass]="{'blue': passenger.payment === 'mastercard'}"></i>
+        <i class="fab fa-cc-apple-pay" [ngClass]="{'blue': passenger.payment === 'Apple Pay'}"></i>
     </div>
 
     <div class="info">
         <div class="from">
             <p id="check"><i class="fas fa-check"></i></p>
-            <strong>Jackson Heights</strong>
-            <p>37-27 74th Street</p>
+            <strong>{{ passenger.from_name }}</strong>
+            <p>{{ passenger.from_adreess }}</p>
         </div>
 
         <div class="separator">
@@ -39,8 +39,8 @@
         
         <div class="to">
             <p id="map"><i class="fas fa-map-marker-alt"></i></p>
-            <strong>Greenpoint</strong>
-            <p>81 Gate St Brooklyn</p>
+            <strong>{{ passenger.to_name }}</strong>
+            <p>{{ passenger.to_adreess }}</p>
         </div>
     </div>
 
@@ -52,22 +52,22 @@
 
     <div class="info-details">
         <div id="distance" class="box">
-            <strong>12.3 km</strong>
+            <strong>{{ passenger.distance }}</strong>
             <p>Distance</p>
         </div>
 
         <div id="time" class="box">
-            <strong>42 min</strong>
+            <strong>{{ passenger.time }}</strong>
             <p>Time</p>
         </div>
 
         <div id="price" class="box">
-            <strong>$34.20</strong>
+            <strong>{{ passenger.price }}</strong>
             <p>Price</p>
         </div>
 
         <div id="energy" class="box">
-            <strong>12.4 kWh</strong>
+            <strong>{{ passenger.energy }}</strong>
             <p>Energy</p>
         </div>
     </div>

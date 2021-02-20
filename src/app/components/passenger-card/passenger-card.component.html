@@ -1,7 +1,7 @@
 <div class="card">
     <app-headboard-passenger-info (viewChanged) = "viewChanged($event)"></app-headboard-passenger-info>
 
-    <app-passenger-info></app-passenger-info>
+    <app-passenger-info [passenger] = "passenger"></app-passenger-info>
 
-    <app-data-payments-passenger [show] = "show"></app-data-payments-passenger>
+    <app-data-payments-passenger [show] = "show" [passenger] = "passenger"></app-data-payments-passenger>
 </div>

@@ -10,14 +10,14 @@ export class DataPaymentsPassengerComponent implements OnInit {
 
   @Input() show: boolean;
 
-  passengers: Passenger[] = [];
+  @Input() passenger: Passenger;
 
-  constructor( private _passengersService: PassengersService ) {
+  constructor() {
 
   }
 
   ngOnInit(): void {
-    this.passengers = this._passengersService.getPassengers();
+
   }
 
 }

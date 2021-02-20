@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PassengersService, Passenger } from '../app/services/passengers.services';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'onyze';
+
+  passengers: Passenger[] = [];
+
+  constructor( private _passengersService: PassengersService ) {
+
+  }
+
+  ngOnInit(): void {
+    this.passengers = this._passengersService.getPassengers();
+  }
 }

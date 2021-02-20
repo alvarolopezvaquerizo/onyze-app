@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Passenger } from '../../services/passengers.services';
 
 @Component({
   selector: 'app-passenger-card',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./passenger-card.component.css']
 })
 export class PassengerCardComponent implements OnInit {
+
+  @Input() passenger: Passenger;
 
   show: boolean;
 

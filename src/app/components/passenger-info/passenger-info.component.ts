@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { PassengersService, Passenger } from '../../services/passengers.services';
+import { Component, Input, OnInit } from '@angular/core';
+import { Passenger } from '../../services/passengers.services';
 
 @Component({
   selector: 'app-passenger-info',
@@ -8,15 +8,14 @@ import { PassengersService, Passenger } from '../../services/passengers.services
 })
 export class PassengerInfoComponent implements OnInit {
 
-  passengers: Passenger[] = [];
+  @Input() passenger: Passenger;
 
-  constructor( private _passengersService: PassengersService ) {
+  constructor() {
 
   }
 
   ngOnInit(): void {
-    this.passengers = this._passengersService.getPassengers();
-    console.log(this.passengers);
+
   }
 
 }
