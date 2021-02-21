@@ -84,3 +84,10 @@ input:checked + .slider:before {
     display: block;
     float: right;
 }
+
+/*RESPONSIVE*/
+@media (max-width: 576px) {
+    .headboard {
+        margin-top: 15px;
+    }
+}
